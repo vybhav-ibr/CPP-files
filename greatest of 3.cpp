@@ -1,20 +1,15 @@
-#include<iostream>
-using namespace std;
+#include<stdio.h>
 main()
 {
-	int num1,num2,num3;
-	cout<<"Enter the three numbers:";
-	cin>>num1>>num2>>num3;
-	if(num1>num2)&&(num1>num3)
-	 {
-	 cout<<"num1 is the greatest";
-	 }
-	else if(num2>num1)&&(num2>num3)
-	{
-     cout<<"num1 is the greatest";
-     }
-	   else
-      {  
-		cout<<"num3 is the greatest";
-	  }  
+	int a,b,c;
+	printf("enter the three numbers");
+	scanf("%d %d %d",&a,&b,&c);
+    if ((a>b) && (a>c))
+     printf("A is the greatest number");
+     else if ((b>a) && (b>c))
+     printf("B is the greatest number");
+     else
+     printf("C is the greatest number");
+     
 }
+
